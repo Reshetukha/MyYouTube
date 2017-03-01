@@ -34,19 +34,139 @@
             <div class="row">
                 <div class="col-md-3" style="
                 height: 34px;
-                Logo
+                display: flex;
                 ">
-                Logo
+                <!-- DROPDOWN -->
+                    <div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"  color="gray" style="
+						margin-left: -20px;
+						background-color: white;
+						color: grey;
+						border: 0px;
+						"><span class="glyphicon glyphicon-menu-hamburger"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span>Главная</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> Мой канал</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-fire"></span>В тренде</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>Подписки</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-hourglass"></span>Просмотренные</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-time"></span>Посмотреть позже</a></li>
+							<li class="dropdown-header"><font color="red">ПЛЕЙЛИСТЫ</font></li>
+							<li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span>Понравившиеся</a></li>
+							<li class="dropdown-header"><font color="red">ПОДПИСКИ</font></li>
+							<li><a href="#">Добавить каналы</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-star"></span>Популярные</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-music"></span>Музыка</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-star-empty"></span>Спорт</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-plus-sign"></span>Каталог каналов</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-film"></span>Фильмы</a></li>
+						</ul>
+					</div>
+                <!-- /DROPDOWN -->
+                <!-- LOGO -->
+                <a href="index.html" style="
+                    font-size: 0;
+                    display: flex;
+                    text-decoration: none;
+                    ">
+                    <div style="
+                        width: 73px;
+                        height: 30px;
+                        background: url(utubekit.webp) -425px -391px;
+                        ">
+                    </div>
+                    <span style="
+                        color: #767676;
+                        font-size: 11px;
+                        ">
+                        UA
+                    </span>
+                </a>
+                <!-- /LOGO -->
                 </div>
+                <!--
+                    color: #fff;
+                    background-color: #fff;
+                    border-color: #fff;
+                -->
                 <div class="col-md-6" style="
-                height: 34px;
+                    height: 34px;
+                    display: flex;
                 ">
-                Search...fixed header
+                <!-- SEARCH -->
+                <form class="form-search" style="
+                    border: solid 1px #d3d3d3;
+                    ">
+				    <input type="text" placeholder="Введіть текст" size="80" maxlength="50" class="input-medium search-query" style="
+                        width: 100%;
+                        max-width: 520px;
+                        border: 0px;
+				    ">
+				    <button type="button" class="btn btn-default" style="
+                        width: 39;
+                        border: 0;
+                        border-radius: 0px;
+				        border-left: solid 1px #d3d3d3;
+				    "><span class="glyphicon glyphicon-search"></span></button>
+				</form>
+                <!-- SEARCH  -->
                 </div>
+                
                 <div class="col-md-3" style="
                 height: 34px;
                 ">
-                User
+                <!-- кнопки справа  -->
+                    <div style="
+                        display: flex;
+                        margin-right: -20px;
+                        margin-left: 170px;
+                        ">
+                        <!-- Добавить видео  -->
+                        <div style="
+                            background: no-repeat url(utubekit.webp) -419px -174px;
+                            height: 24px;
+                            width: 44px;
+                            opacity: 0.5;
+                            margin-top: 5px;
+                            margin-right: 15px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            ">
+                        </div>
+                        
+                        <!-- оповещения  -->
+                        <div style="
+                            background: no-repeat url(utubekit.webp) -28px -261px;
+                            height: 30px;
+                            width: 32px;
+                            opacity: 0.5;
+                            margin-top: 1px;
+                            margin-right: 10px;
+                            ">
+                        </div>
+                        <!-- User кнопка - U  -->
+                        <div style="
+                            margin-top: 3px;
+                            border: solid 1px #00897B;
+                            height: 27px;
+                            width: 27px;
+                            border-radius: 13px;
+                            background: #00897B;
+                            ">
+                            <div style="
+                                padding-left: 6px;
+                                padding-top: 3px;
+                                ">
+                                <span style="
+                                    color: white;
+                                    font: 12pt sans-serif;
+                                    ">
+                                    U
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,20 +177,21 @@
     <div class="container-fluid" style="
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
+        margin-top: 60px;
         padding-bottom: 195px;
-        min-height: 600px;                                    
+        min-height: 600px;
+        background-color: #f1f1f1;                                    
         ">
         <!-- Left body Part -->
         <div class="col-md-8">
-            <!-- Player -->
+            <!-- Player Container -->
             <div class="container-fluid" style="
                 padding-left: 0px;
                 padding-right: 0px;
-                height: 480px;
                 margin-bottom: 10px;
                 ">
-                Place for player
+                <!-- Player -->
+                <iframe width="854" height="480" src="https://www.youtube.com/embed/511gs1a7DwI" frameborder="0" allowfullscreen></iframe>
             </div>
             <!-- Movie, Channel -->
             <div class="container-fluid" style="
@@ -78,17 +199,333 @@
                 padding-bottom: 5px;
                 height: 150px;
                 margin-bottom: 10px;
+                background-color: #fff;
                 ">
-                Place for Movie name, Channel, wievs, likes, etc.
+                <!-- Video name -->
+                <div style="
+                    width: 100%;
+                    height: 24px;
+                    ">
+                    <span style="
+                        font-size: 20px;
+                        ">
+                        The new Panamera Turbo S E-Hybrid
+                    </span>
+                </div>
+                
+                 <!-- Channel info -->
+                <div style="
+                    width: 100%;
+                    height: 68px;
+                    padding-top: 10px;
+                    padding-bittom: 10px;
+                    ">
+                    <div class="containter-fluid">
+                        <div class="col-md-1">
+                            <!-- Channel logo 48x48 -->
+                            <img src="channel_logo.jpg" style="
+                                width: 48px;
+                                height: 48px;
+                            ">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row" style="
+                                height: 22px;
+                                display: flex;
+                            ">
+                            <a href="index.html" style="
+                                color: black;
+                                 /* font-family: sans-serif; */
+                                font-weight: 600;
+                                opacity: 0.7;
+                                ">
+                                Porsche
+                            </a>
+                            <span style="
+                                height: 9px;
+                                width: 12px;
+                                background: url(utubekit.webp) -258px -121px;
+                                margin-left: 3px; 
+                                ">
+                            </span>
+                            </div>
+                            <div class="row" style="
+                                height: 24px;
+                                display: flex;
+                            ">
+                                <div style="
+                                    width: 108px;
+                                    height: 24px;
+                                    color: #fefefe;
+                                    background-color: #e62117;
+                                    border: solid 1px #e62117;
+                                    border-radius: 2px;
+                                    display: flex;
+                                    ">
+                                    <div style="
+                                        background: url(utubekit.webp) -455px -224px;
+                                        margin-top: 5px;
+                                        margin-left: 5px;
+                                        margin-right: 6px;
+                                        width: 16px;
+                                        height: 12px;
+                                        ">
+                                    </div>
+                                    <span style="
+                                        font-size: 12px;
+                                        margin-top: 3px;
+                                        ">
+                                        Подписаться
+                                    </span>
+                                    <!-- background: url(utubekit.webp) -455px -224px; -->
+                                </div>
+                                <div style="
+                                    width: 58px;
+                                    height: 24px;
+                                    color: #737373;
+                                    font-size: 11px;
+                                    text-align: center;
+                                    margin-left: -1px;
+                                    border: solid 1px #ccc;
+                                    border-radius: 0 2px 2px 0;
+                                    padding-top: 3px;
+                                    ">
+                                    370 тыс.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <!-- Просмотров -->
+                            <div style="
+                                    border-bottom: solid 2px #167ac6;
+                                    margin-top: 30px;
+                                    ">
+                                <span style="
+                                    font-size: 19px;
+                                    color: #666;
+                                    margin-bottom: 2px;
+                                    ">
+                                    20 000 Просмотров
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Options -->
+                <div class="col-md-9" style="
+                    height: 34px;
+                    padding-top: 5px;
+                    border-top: solid 1px #e2e2e2;
+                    display: flex;
+                    ">
+                    
+                    <!-- кнопка Добавить -->
+                    <button style="
+                        border: 0px;
+                        display: flex;
+                        width: 105px;
+                        margin-right: 12px;
+                        ">
+                        <div style="
+                            height: 20px;
+                            width: 20px;
+                            background: url(utubekit.webp) -146px -230px;
+                            opacity: 0.5;
+                            margin-right: 6px;
+                            ">
+                        </div>
+                        <span style="
+                            opacity: 0.5;
+                            font-size: 11px;
+                            margin-top: 2px;
+                            ">
+                            Добавить в
+                        </span>
+                    </button>
+                    
+                    <!-- Кнопка Поделиться -->
+                    <button style="
+                        border: 0px;
+                        display: flex;
+                        width: 105px;
+                        margin-right: 12px;
+                        ">
+                        <div style="
+                            height: 20px;
+                            width: 20px;
+                            background: url(utubekit.webp) -97px -233px;
+                            opacity: 0.5;
+                            margin-right: 6px;
+                            ">
+                        </div>
+                        <span style="
+                            opacity: 0.5;
+                            font-size: 11px;
+                            margin-top: 2px;
+                            ">
+                            Поделиться
+                        </span>
+                    </button>
+                    
+                    <!-- Кнопка Еще -->
+                    <button style="
+                        border: 0px;
+                        display: flex;
+                        width: 105px;
+                        margin-right: 12px;
+                        ">
+                        <div style="
+                            height: 20px;
+                            width: 20px;
+                            background: url(utubekit.webp) -37px -359px;
+                            opacity: 0.5;
+                            margin-right: 6px;
+                            ">
+                        </div>
+                        <span style="
+                            opacity: 0.5;
+                            font-size: 11px;
+                            margin-top: 2px;
+                            ">
+                            Еще
+                        </span>
+                    </button>
+                    
+                </div>
+                <div class="col-md-3" style="
+                    height: 34px;
+                    padding-top: 5px;
+                    border-top: solid 1px #e2e2e2;
+                    display: flex;
+                    ">
+                    
+                    <!-- Like -->
+                    <button style="
+                        border: 0px;
+                        display: flex;
+                        width: 55px;
+                        height: 28px;
+                        margin-right: 12px;
+                        margin-left: 65px;
+                        ">
+                        <div style="
+                            height: 20px;
+                            width: 20px;
+                            background: url(utubekit.webp) -20px -295px;
+                            opacity: 0.5;
+                            margin-right: 6px;
+                            ">
+                        </div>
+                        <span style="
+                            opacity: 0.5;
+                            font-size: 11px;
+                            margin-top: 2px;
+                            ">
+                            613
+                        </span>
+                    </button>
+                    
+                    <!-- DisLike -->
+                    <button style="
+                        border: 0px;
+                        display: flex;
+                        width: 55px;
+                        height: 28px;
+                        margin-right: 12px;
+                        ">
+                        <div style="
+                            height: 20px;
+                            width: 20px;
+                            background: url(utubekit.webp) -216px 0;
+                            opacity: 0.5;
+                            margin-right: 6px;
+                            ">
+                        </div>
+                        <span style="
+                            opacity: 0.5;
+                            font-size: 11px;
+                            margin-top: 2px;
+                            ">
+                            6
+                        </span>
+                    </button>
+                </div>
+                    
+                <!--
+                <div style="
+                    width: 100%;
+                    height: 34px;
+                    padding-top: 5px;
+                    border-top: solid 1px #e2e2e2;
+                    ">
+                    
+                </div>
+                -->
             </div>
             <!-- Published, info -->
             <div class="container-fluid" style="
                 padding-top: 15px;
                 padding-bottom: 5px;
-                height: 167px;
+                height: 178px;
                 margin-bottom: 10px;
                 ">
-                Date, info.
+                <div>
+                   <span style="
+                       font-size: 13px;
+                       font-weight: 600;
+                       ">
+                       Опубликовано: 24 февр. 2017 г.
+                    </span> 
+                </div>
+                <div style="
+                    height: 70;
+                    width: 100%;
+                    ">
+                   <p style="
+                       font-size: 13px;
+                       ">
+                       Acceleration from 0 to 100 km/h in 3.4 seconds. In a luxury limousine. In a sports car with 4 business class seats. In the new Panamera Turbo S E-Hybrid.
+                       <br>
+                       <br>
+                       Combined fuel consumption in accordance with EU 6: Panamera Turbo S E-Hybrid: 2.9 l/100 km, CO2 emissions: 66 g/km; Electricity consumption: 16.2 kWh/100 km
+                   </p>
+                </div>
+                
+                <div class="row" style="
+                    height: 11px;
+                    margin-bottom: 5px;
+                    font-size: 11px;
+                    ">
+                    <div class="col-md-2" style="
+                        font-weight: 600;
+                        ">
+                        Категория
+                    </div>
+                    <div class="col-md-10" style=" 
+                        margin-left: -25px;
+                        ">
+                        Транспорт
+                    </div>
+                </div>
+                
+                <div class="row" style="
+                    height: 11px;
+                    margin-bottom: 5px;
+                    font-size: 11px;
+                    ">
+                    <div class="col-md-2" style="
+                        font-weight: 600;
+                        ">
+                        Лицензия
+                    </div>
+                    <div class="col-md-10" style=" 
+                        margin-left: -25px;
+                        ">
+                        Стандартная лицензия YouTube
+                    </div>
+                </div>
+                
             </div>
             <!-- Comments -->
             <div class="container-fluid" style="
@@ -110,6 +547,7 @@
                 padding-right: 0px;
                 height: 500px;
                 margin-bottom: 10px;
+                background-color: #fff;
                 ">
                 Watch more movies.
             </div>
@@ -138,11 +576,11 @@
             ">
             <!-- Logo -->
             <div style="
-            width: 73px;
-            height: 30px;
-            margin-right: 18px;
-            background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfl4T5KLq.webp) -101px -621px;
-            ">
+                width: 73px;
+                height: 30px;
+                margin-right: 18px;
+                background: url(utubekit.webp) -425px -391px;
+                ">
             </div>
             <!-- Язык Roboto,arial,sans-serif; width: 12%;  -->
             <div style="
@@ -156,7 +594,7 @@
             margin-right: 18px;
             ">
                 <div style="
-                    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfl4T5KLq.webp) -112px -914px;
+                    background: url(utubekit.webp) -170px 0px;
                     width: 25px;
                     height: 15px;
                     opacity: 0.6;
@@ -320,7 +758,7 @@
                     vertical-align: middle;
                     margin-right: 6px;
                     opacity: 0.5;
-                    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfl4T5KLq.webp) -59px -268px
+                    background: url(utubekit.webp) -503px -188px;
                     ">
                     </div>
                     <span style="    
@@ -363,7 +801,7 @@
                     vertical-align: middle;
                     margin-right: 6px;
                     opacity: 0.5;
-                    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfl4T5KLq.webp) -265px -532px
+                    background: url(utubekit.webp) -233px -373px;
                     ">
                 </div>
                 <span style="    
